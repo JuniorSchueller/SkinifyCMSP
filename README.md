@@ -19,7 +19,7 @@
    - Clique em "Raw" para abrir o código do userscript e o Tampermonkey irá sugerir a instalação do script.
 
 3. **Configurar a Skin**:
-   - No código do userscript, há uma variável chamada `skinUrl`. Basta substituir o valor dessa variável com a URL do seu skinData JSON hospedado externamente.
+   - No código do userscript, há uma variável chamada `skinData`. Basta definir o valor dessa variável com o JSON da skin que deseja usar.
 
 4. **Aplicar a Skin**:
    - Salve e ative o script no Tampermonkey. O CMSP será automaticamente estilizado com a skin configurada ao acessar a plataforma.
@@ -39,7 +39,7 @@
    - Depois de finalizar as personalizações, clique no botão "Enviar".
 
 5. **Aplicar a Skin**:
-   - Pegue a URL do JSON hospedado e configure-a na variável `skinUrl` do script do SkinifyCMSP.
+   - Pegue a o JSON hospedado e configure-a na variável `skinData` do script do SkinifyCMSP.
 
 ## Contribuição
 
