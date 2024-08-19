@@ -15,7 +15,7 @@
    - Primeiro, instale a extensão [Tampermonkey](https://www.tampermonkey.net/) no seu navegador.
 
 2. **Instalar o Script**:
-   - Visite o [gist do SkinifyCMSP](https://github.com/JuniorSchueller/SkinifyCMSP)(https://gist.github.com/JuniorSchueller/a5f925d64fd5734a027ccc3ffa7d1303).
+   - Visite o [gist do SkinifyCMSP](https://gist.github.com/JuniorSchueller/a5f925d64fd5734a027ccc3ffa7d1303).
    - Clique em "Raw" para abrir o código do userscript e o Tampermonkey irá sugerir a instalação do script.
 
 3. **Configurar a Skin**:
