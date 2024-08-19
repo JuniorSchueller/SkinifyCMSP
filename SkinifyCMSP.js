@@ -13,10 +13,7 @@
 (async function() {
     'use strict';
 
-    const skinUrl = '' // URL da skin
-
-    const skinReq = await fetch(skinUrl);
-    const skinData = await skinReq.json();
+    const skinData = {}; // Cole o JSON aqui.
 
     function setStyle(identifier, styles) {
         const element = document.querySelector(identifier);
@@ -47,11 +44,11 @@
                 setStyleAll('#login > input', { color: skinData.loginInputTextColor });
             }
 
-            if (skinData.noAgreements && skinData.noAgreements === true) {
+            if (skinData.noAgreements && skinData.noAgreements === 'true') {
                 setStyle('#login > div.bgw.frm.w100', { display: 'none' });
             }
 
-            if (skinData.borderLogo && skinData.borderLogo === true) {
+            if (skinData.borderLogo && skinData.borderLogo === 'true') {
                 let count = 0;
                 const borderSet = setInterval(() => {
                     document.querySelectorAll('img.logo').forEach(logo => {
@@ -63,7 +60,7 @@
                 }, 500);
             }
 
-            if (skinData.prettyMenus && skinData.prettyMenus === true) {
+            if (skinData.prettyMenus && skinData.prettyMenus === 'true') {
                 setStyle('#login-select', { borderRadius: '12px', backgroundColor: '#ffffff5c' });
                 setStyle('#login-teacher', { borderRadius: '12px', backgroundColor: '#ffffff5c' });
                 setStyle('#login-student', { borderRadius: '12px', backgroundColor: '#ffffff5c' });
@@ -137,7 +134,7 @@
     } else {
         setInterval(() => {
             if (document.body.textContent.includes('Nick') && document.body.textContent.includes('Nome') && document.body.textContent.includes('Autor')) {
-                if (skinData.allowCheats || skinData.allowCheats === true) {
+                if (skinData.allowCheats || skinData.allowCheats === 'true') {
                     if (document.querySelector('#root > div:nth-child(2)').textContent.includes('To use cheats you need to install')) {} else {
                         document.querySelector('#root > div:nth-child(2)').insertAdjacentHTML('afterbegin', 'To use cheats you need to install <a style="font-weight: bold;color:white;" href="https://chromewebstore.google.com/detail/disable-content-security/nfopobepahgdajolplgnlbfohogmhkno" target="_blank">Disable Content Security Policy</a><br>If you already have, <span id="activateCheat" style="font-style:underlined;cursor:pointer;font-weight:bold;">click here</span> to activate.');
 
