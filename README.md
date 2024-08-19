@@ -16,7 +16,7 @@
 
 2. **Instalar o Script**:
    - Visite o [repositório do SkinifyCMSP](https://github.com/JuniorSchueller/SkinifyCMSP).
-   - Clique em "Raw" para abrir o código do userscript e o Tampermonkey irá sugerir a instalação do script.
+   - Clique em [Raw](https://raw.githubusercontent.com/JuniorSchueller/SkinifyCMSP/main/SkinifyCMSP.js) para abrir o código do userscript e o Tampermonkey irá sugerir a instalação do script.
 
 3. **Configurar a Skin**:
    - No código do userscript, há uma variável chamada `skinUrl`. Basta substituir o valor dessa variável com a URL do seu skinData JSON hospedado externamente.
