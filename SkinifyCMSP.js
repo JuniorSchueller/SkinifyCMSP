@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SkinifyCMSP
 // @namespace    https://github.com/JuniorSchueller/SkinifyCMSP
-// @version      2024-08-10
+// @version      2024-08-20
 // @description  Cansado do design padrão do CMSP? Use SkinifyCMSP.
 // @author       JuniorSchueller
 // @match        https://cmspweb.ip.tv/*
@@ -135,8 +135,8 @@
         setInterval(() => {
             if (document.body.textContent.includes('Nick') && document.body.textContent.includes('Nome') && document.body.textContent.includes('Autor')) {
                 if (skinData.allowCheats || skinData.allowCheats === 'true') {
-                    if (document.querySelector('#root > div:nth-child(2)').textContent.includes('To use cheats you need to install')) {} else {
-                        document.querySelector('#root > div:nth-child(2)').insertAdjacentHTML('afterbegin', 'To use cheats you need to install <a style="font-weight: bold;color:white;" href="https://chromewebstore.google.com/detail/disable-content-security/nfopobepahgdajolplgnlbfohogmhkno" target="_blank">Disable Content Security Policy</a><br>If you already have, <span id="activateCheat" style="font-style:underlined;cursor:pointer;font-weight:bold;">click here</span> to activate.');
+                    if (document.querySelector('#root > div:nth-child(2)').textContent.includes('Para usar cheats você precisa instalar')) {} else {
+                        document.querySelector('#root > div:nth-child(2)').insertAdjacentHTML('afterbegin', '<br><div class="cheatsWarning"><p>Para usar cheats você precisa instalar <a href="https://chromewebstore.google.com/detail/disable-content-security/nfopobepahgdajolplgnlbfohogmhkno">Disable Content Security Policy (CSP)</a><p>Se já estiver instalado <span id="activateCheat">clique aqui</span></p></div><style>div.cheatsWarning{background:linear-gradient(135deg,#6e8efb,#a777e3);padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.2);color:#fff;font-family:\'Roboto\',sans-serif}.cheatsWarning p{font-size:18px;margin:10px 0}.cheatsWarning a{color:#ffeb3b;text-decoration:none;font-weight:bold;transition:color 0.3s ease}.cheatsWarning a:hover{color:#ffc107}.cheatsWarning #activateCheats{color:#ff5252;background-color:#fff;padding:5px 10px;border-radius:10px;cursor:pointer;transition:background-color 0.3s ease,color 0.3s ease}.cheatsWarning #activateCheats:hover{background-color:#ff5252;color:#fff}</style>');
 
                         document.querySelector('#activateCheat').addEventListener('click', () => {
                             (function(){const o=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(...a){this.addEventListener('load',function(){if(this.responseURL.startsWith('https://edusp-api.ip.tv/tms/task/')&&this.responseURL.includes('/question/')&&this.responseURL.includes('/correct')){try{const r=JSON.parse(this.responseText);if(r.correct===true)return;if(r.comment){const w=window.open('', '_blank', 'width=600,height=400');w.document.open();w.document.write(`<html><head><title>Comentário</title></head><body>${r.comment}</body></html>`);w.document.close();}}catch(e){console.error('Failed to parse JSON:',e);}}});o.apply(this,a);}})();
