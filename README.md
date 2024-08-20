@@ -41,6 +41,10 @@
 5. **Aplicar a Skin**:
    - Pegue a o JSON hospedado e configure-a na variável `skinData` do script do SkinifyCMSP.
 
+## Tutorial em vídeo
+
+[Clique aqui para assistir o tutorial](https://www.youtube.com/watch?v=ePtxQD902v0)
+
 ## Contribuição
 
 Se desejar contribuir para o desenvolvimento do SkinifyCMSP, sinta-se à vontade para abrir issues ou enviar pull requests no [repositório oficial](https://github.com/JuniorSchueller/SkinifyCMSP).
