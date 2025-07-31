@@ -2,7 +2,11 @@
 
 **SkinifyCMSP** é um userscript que permite a personalização visual da interface do CMSP (Centro de Mídias São Paulo). Cansado do design padrão? Com SkinifyCMSP, você pode aplicar suas próprias skins e transformar completamente a aparência do CMSP.
 
-## Funcionalidades
+---
+
+⚠ SkinifyCMSP foi descontinuado, verifique [SkinifySDF](https://github.com/JuniorSchueller/SkinifySDF).
+
+<!-- ## Funcionalidades
 
 - **Personalização do Login**: Modifique o fundo, as cores dos textos e o estilo dos menus na tela de login.
 - **Estilização das Salas**: Altere o fundo, as cores dos textos e os detalhes visuais das salas e canais.
@@ -47,7 +51,7 @@
 
 ## Contribuição
 
-Se desejar contribuir para o desenvolvimento do SkinifyCMSP, sinta-se à vontade para abrir issues ou enviar pull requests no [repositório oficial](https://github.com/JuniorSchueller/SkinifyCMSP).
+Se desejar contribuir para o desenvolvimento do SkinifyCMSP, sinta-se à vontade para abrir issues ou enviar pull requests no [repositório oficial](https://github.com/JuniorSchueller/SkinifyCMSP). -->
 
 ---
 
